@@ -6,9 +6,3 @@ public protocol Product {
     
     func saveObject()
 }
-
-extension Product {
-    func saveObject() {
-        print("I am saving the object into product database")
-    }
-}
