@@ -1,0 +1,26 @@
+import Foundation
+
+let cheapPhoneBuilder = LowPricePhoneBuilder()
+let expensivePhoneBuilder = HighPricePhoneBuilder()
+
+let salesMan = FactorySalesMan(builder: cheapPhoneBuilder)
+salesMan.constructPhone()
+var phone = salesMan.getPhone()
+print("\n")
+print("Phone name: \(phone.name!)")
+print("OS version: \(phone.osVersion!)")
+print("CPU code name: \(phone.cpuCodeName!)")
+print("RAM size: \(phone.RAMsize!)")
+print("OS version code: \(phone.osVersionCode!)")
+print("Launcher: \(phone.launcher!)")
+
+salesMan.update(builder: expensivePhoneBuilder)
+salesMan.constructPhone()
+phone = salesMan.getPhone()
+print("\n")
+print("Phone name: \(phone.name!)")
+print("OS version: \(phone.osVersion!)")
+print("CPU code name: \(phone.cpuCodeName!)")
+print("RAM size: \(phone.RAMsize!)")
+print("OS version code: \(phone.osVersionCode!)")
+print("Launcher: \(phone.launcher!)")
