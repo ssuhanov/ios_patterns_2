@@ -1,9 +1,7 @@
 import Foundation
 
 public class FileDownloader {
-    public init() {
-        print("Downloader created")
-    }
+    public init() { }
     
     public func slowDownload() {
         print("Sloooooowly downloading...")

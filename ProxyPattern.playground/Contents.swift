@@ -1,9 +1,10 @@
 import Foundation
 
-let proxy = FileDownloaderProxy(isPremiumUser: false)
-proxy.download()
+let proxy = FileDownloaderProxy()
+proxy.isPremiumUser = false
+proxy.fastDownload()
 
 print("==========")
 
 proxy.isPremiumUser = true
-proxy.download()
+proxy.fastDownload()
